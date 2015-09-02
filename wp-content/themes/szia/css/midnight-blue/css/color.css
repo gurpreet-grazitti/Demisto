@@ -1,0 +1,24 @@
+/*
+* SZIA Onepage HTML Template V.1.0
+* Copyright 2013
+* AUTHOR: Rohithpaul // http://themeforest.net/user/rohithpaul
+* DATE: 17/11/2013
+*/
+
+
+/* PRIMARY COLOR
+================================================== */
+
+/*Text Color*/
+#bigslider .flex-caption h5, nav ul.primary_nav li.current:before, nav ul.primary_nav li.current:after, .szia_contact #contact_form input[type="submit"]:hover, .button_big, .button_big.solid, a.button_thin, .button_big.solid:hover, a{
+	color:#384263;
+}
+
+/*Background Color*/
+#dates .selected, #work_slider .flex-direction-nav a:hover, #work_slider .flex-caption > span, #work_showcase li .work_info, .szia_contact #contact_form input[type="submit"], .acc-trigger.active a:after, .toggle-trigger.active, .toggle-trigger.active a:after, .button:hover, .button:active, .button_big.solid, #work_slider .flex-caption > span, .landing_text .btn_big, ol.comment_list li .commented_by.administrator > strong, input[type="submit"], input[type="button"], button{
+	background-color:#384263;
+}
+/*Border Color*/
+.szia_contact #contact_form input[type="submit"], .ac-trigger.active, .toggle-trigger.active, .tabs-nav li.active a, .button_big, .landing_text .btn_big, #blog article hr, .button_thin:hover, #sidebar .widget ul li a{
+	border-color:#384263;
+}

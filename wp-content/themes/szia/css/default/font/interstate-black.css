@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'InterstateBlack';
+    src: url('interstate-black.eot');
+    src: url('interstate-black.eot') format('embedded-opentype'),
+         url('interstate-black.woff') format('woff'),
+         url('interstate-black.ttf') format('truetype'),
+         url('interstate-black.svg#InterstateBlack') format('svg');
+}

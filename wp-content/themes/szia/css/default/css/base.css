@@ -1,0 +1,216 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+
+/* Table of Content
+==================================================
+	#Reset & Basics
+	#Basic Styles
+	#Site Styles
+	#Typography
+	#Links
+	#Lists
+	#Images
+	#Buttons
+	#Forms
+	#Misc */
+
+
+/* #Reset & Basics (Inspired by E. Meyers)
+================================================== */
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline; }
+	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+		display: block;}
+	body {
+		line-height: 1; }
+	ol, ul {
+		list-style: none; }
+	blockquote, q {
+		quotes: none; }
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none; }
+	table {
+		border-collapse: collapse;
+		border-spacing: 0; }
+	section{ overflow:hidden;}
+
+/* #Basic Styles
+================================================== */
+	body {
+		font-family:'Open Sans', Arial, Helvetica, sans-serif;
+		background: #fff;
+		color: #000;
+		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+		-webkit-text-size-adjust: 100%;
+ }
+
+
+/* #Typography
+================================================== */
+	h1, h2, h3, h4, h5, h6 {
+		font-family:'Open Sans', Arial, Helvetica, sans-serif;
+		color: #212121;
+		margin:0px 0px 20px 0px;
+		font-weight: normal; }
+	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
+	h1 { font-size: 46px; }
+	h2 { font-size: 24px; font-weight: 800; }
+	h3 { font-size: 24px;  }
+	h4 { font-size: 18px;  }
+	h5 { font-size: 17px;  }
+	h6 { font-size: 14px;  }
+	.subheader { color: #777; }
+
+	p img { margin: 0;  }
+	p { font-size:15px; line-height: 23px; margin-bottom:15px;color:#858585; }
+	p.lead { font-size: 21px; line-height: 27px; color: #777;  }
+
+	em { font-style: italic; }
+	strong { font-weight: bold; }
+	small { font-size: 80%; }
+
+/*	Blockquotes  */
+	blockquote, blockquote p { font-size: 17px; line-height: 24px; color: #777; font-style: italic; }
+	blockquote { margin: 0 0 20px; padding: 9px 20px 0 19px; border-left: 1px solid #ddd; }
+	blockquote cite { display: block; font-size: 12px; color: #555; }
+	blockquote cite:before { content: "\2014 \0020"; }
+	blockquote cite a, blockquote cite a:visited, blockquote cite a:visited { color: #555; }
+
+	hr { border: solid #ddd; border-width: 1px 0 0; clear: both; margin: 10px 0 30px; height: 0; }
+
+
+/* #Links
+================================================== */
+	a { 
+		color:#01cda7;
+		text-decoration: none; 
+		outline: 0; 		
+		transition: all 0.2s;
+		-moz-transition: all 0.2s; /* Firefox 4 */
+		-webkit-transition: all 0.2s; /* Safari and Chrome */
+		-o-transition: all 0.2s; /* Opera */
+	}
+	p a, p a:visited { line-height: inherit; }
+
+
+/* #Lists
+================================================== */
+	ul { list-style: none outside; }
+	ol { list-style: decimal; }
+	ol, ul.square, ul.circle, ul.disc { margin-left: 30px; }
+	ul.square { list-style: square outside; }
+	ul.circle { list-style: circle outside; }
+	ul.disc { list-style: disc outside; }
+	ul ul, ul ol,
+	ol ol, ol ul { margin: 4px 0 5px 30px; font-size: 90%;  }
+	ul ul li, ul ol li,
+	ol ol li, ol ul li { margin-bottom: 6px; }
+	li { line-height: 18px; }
+	ul.large li { line-height: 21px; }
+	li p { line-height: 21px; }
+
+/* #Images
+================================================== */
+
+	img{
+		max-width: 100%;
+		height: auto; 
+	}
+
+
+/* #Buttons
+================================================== */
+
+	.button,
+	.button:visited,
+	button,
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"] {
+		border: none;
+		background: #1d1d1d; 
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border-radius: 5px;
+		color: #fff;
+		display: inline-block;
+		font-size: 14px;
+		font-weight: 600;
+		text-decoration: none;
+		cursor: pointer;
+		margin-bottom: 20px;
+		line-height: normal;
+		padding: 8px 30px;
+		font-family:'Open Sans', Arial, Helvetica, sans-serif;
+		text-align: center;
+		
+		transition: all 0.2s;
+		-moz-transition: all 0.2s; /* Firefox 4 */
+		-webkit-transition: all 0.2s; /* Safari and Chrome */
+		-o-transition: all 0.2s; /* Opera */
+	}
+	
+	
+	.button:hover,
+	button:hover,
+	input[type="submit"]:hover,
+	input[type="reset"]:hover,
+	input[type="button"]:hover {
+		color: #fff;
+		
+	}
+	
+
+	.button:active,
+	button:active,
+	input[type="submit"]:active,
+	input[type="reset"]:active,
+	input[type="button"]:active {
+		
+	}
+
+	/* Fix for odd Mozilla border & padding issues */
+	button::-moz-focus-inner,
+	input::-moz-focus-inner {
+		border: 0;
+		padding: 0;
+	}
+	input, textarea, button{
+		font-family:'Open Sans', Arial, Helvetica, sans-serif;
+	}
+	textarea:focus, input:focus, select:focus{
+		outline: none;
+		-webkit-appearance: none;
+	}
+	
+/* #General
+================================================== */
+.align_center{
+	text-align:center;
+}
+.align_left{
+	text-align:left;
+}
+.align_right{
+	text-align:right;
+}
+.fl_left{
+	float:left;
+}
+.fl_right{
+	float:right;
+}

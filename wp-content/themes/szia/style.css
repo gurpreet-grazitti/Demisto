@@ -1,0 +1,237 @@
+/*
+Theme Name: Szia
+Theme URI: http://szia-wp.rp-themez.com/
+Author: the Smartdatasoft team
+Author URI: http://www.smartdatasoft.com/
+Description: Szia studio is a ultra responsive & highly customizable One-page portfolio theme for creative folks and companies. Easy to customize according to your needs.
+Version: 1.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: one-column, right-sidebar, fluid-layout, custom-header, custom-menu, editor-style, featured-images, post-formats, sticky-post, translation-ready
+Text Domain: szia 
+*/
+
+
+nav ul.primary_nav li{
+    max-width: inherit;
+    width:auto;
+}
+
+nav ul.primary_nav li.current:before,
+nav ul.primary_nav li.current:after{
+    font-size: 24px;
+    top:39px;
+    position: absolute;
+}
+header.stuck nav ul.primary_nav li.current:before,
+header.stuck nav ul.primary_nav li.current:after{
+    top:26px;
+}
+nav ul.primary_nav li.current{
+    white-space: nowrap;
+}
+
+#dates li{
+    font-size: 11px;
+}
+
+#dates .selected{
+    font-size: 14px;
+}
+#dates a{
+    padding:6px;
+}
+#issues li{    
+    overflow: hidden;
+}
+#issues li h3 a{
+    color: inherit;
+}
+
+.page_slider{
+    position: relative;
+}
+article ul.slides li{
+    list-style-type: none;
+}
+
+#blog article{
+    display: block;
+}
+#blog article .post_content *{
+    white-space: pre-line;
+}
+#blog .blogmetas ul li{
+    margin-bottom: 15px;
+}
+#blog .blogmetas ul li i.fa{
+    float: left;
+    margin-right: 12px;
+    color:#878787;
+    font-size: 19px;
+}
+#blog .blogmetas ul li > ul{
+    float: left;
+    width:auto;
+}
+#blog .blogmetas ul li > span{
+    display: inline-block;
+}
+#blog .blogmetas ul li > img + span{
+    line-height: 22px;
+}
+
+.post_paginate{
+    color:#858585;
+    font-size: 15px;
+}
+.post_paginate .button{
+    padding:8px 12px;
+}
+.post_paginate > .button,
+.post_paginate > .button:hover{
+    cursor: default;    
+}
+
+
+
+ol.comment_list li ul.children li .comment_desc{
+    width:87%;
+}
+ol.comment_list li ul.children li .avatar{
+    width: 10%;
+}
+ol.comment_list li ul.children li .avatar img{
+    width: auto;
+}
+
+#sidebar,
+#sidebar .widget{
+    width:100%;
+}
+#sidebar .widget img{
+    width:auto;
+    max-width: 100%;
+}
+#sidebar .widget input[type='text'],
+#sidebar .widget select{
+    max-width:100%;
+}
+
+#sidebar .widget #wp-calendar #prev,
+#sidebar .widget #wp-calendar #next{
+    display: none;
+}
+#searchform {
+    position: relative;
+}
+#searchform .screen-reader-text{
+    display: none;
+}
+
+#searchform #searchsubmit {
+    height: auto;
+    margin: 0;
+    padding: 8px 10px 7px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: auto;
+}
+#wp-calendar {
+    background: none repeat scroll 0 0 #FFFFFF;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    font-size: 12px;
+    line-height: 2.5;
+    margin: auto;
+    max-width: 370px;
+    text-align: center;
+    width: 100%;
+}
+#wp-calendar caption {
+    border-bottom: 2px solid;
+    color: #212121;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 100%;
+    margin-bottom: 0;
+    padding-bottom: 7px;
+    text-align: left;
+    text-transform: uppercase;
+}
+#wp-calendar thead {
+    color: #555555;
+}
+#wp-calendar thead th {
+    border: 1px solid #DDDDDD;
+    text-align: center;
+}
+#wp-calendar tfoot {
+    border: 1px solid #DDDDDD;
+}
+#wp-calendar tbody tr td {
+    border: 1px solid #DDDDDD;
+    color: #BBBBBB;
+}
+
+.paging_blog a.nav-right{
+    float:right;
+}
+
+footer #to_top{
+    background: url("css/default/images/to_top.png") no-repeat;
+}
+
+/******************************* Common CSS ******************************/
+#work_slider li ul.galleries{
+    margin:auto;
+    width: 75%;
+    display: block;
+}
+
+#work_slider li ul.galleries li{
+    display: inline-block;    
+}
+
+/******************************* Common CSS ******************************/
+.size-auto, 
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
+	max-width: 100%;
+	height: auto;
+}
+
+.alignright{
+    float:right;
+    margin-left: 15px;
+}
+.alignleft{
+    float: left;
+    margin-right: 15px;
+}
+.alignnone{
+    display: block;
+    margin:auto;
+}
+
+.wp-caption{
+
+}
+
+.wp-caption-text{
+
+}
+
+.sticky{
+
+}
+
+.gallery-caption{
+
+}
+
+.bypostauthor{
+
+}

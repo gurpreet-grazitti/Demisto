@@ -1,0 +1,201 @@
+/*------------------------------------------------------------------------
+
+        Name: Full Width Slider 2.0
+        Design and Develpment: eightyclouds
+        Author URI: http://www.eightyclouds.com
+        Version: 1.0
+
+--------------------------------------------------------------------------
+
+   02. Slider Styles
+   03. Media Query Max Width 1300, Min Width 720
+   04. Media Query Max Width 719
+   
+*/
+
+/* ------------------------------- 2. Slider Styles ------------------------------- */
+
+#fwslider {
+	position: relative;
+	background:#1d1d1d;
+	width:100%;
+}
+
+#fwslider .slider_container {
+}
+
+#fwslider .slide {
+	display: none;
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: 0;
+	width:100%;
+}
+
+#fwslider .slide img {
+	width:100%;
+	display: block;
+}
+
+#fwslider .slidePrev {
+	background:#000;
+	width:50px;
+	position: absolute;
+	top:50%;
+	left:-50px;
+	opacity:0.5;
+	z-index: 10;
+}
+
+#fwslider .slidePrev span {
+	width:50px;
+	float:left;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	color: #fff;
+	padding: 20px 0;
+}
+
+#fwslider .slidePrev span i {
+	margin-left: 18px;
+}
+
+#fwslider .slideNext {
+	background:#000;
+	width:50px;
+	position: absolute;
+	top:50%;
+	right:-50px;
+	opacity:0.5;
+	z-index: 10;
+}
+
+#fwslider .slideNext span {
+	width:50px;
+	float:left;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	color: #fff;
+	padding: 20px 0;
+}
+
+#fwslider .slideNext span i {
+	margin-left: 22px;
+}
+
+#fwslider .timers {
+	height:4px;
+	position: absolute;
+	bottom:15px;
+	right:0;
+	z-index: 3;
+}
+
+#fwslider .timer {
+	height:4px;
+	width:40px;
+	background-color: #000;
+	float:left;
+	margin-right: 10px;
+}
+
+#fwslider .progress {
+	height:4px;
+	width:0%;
+	background-color: #FC3;
+	float:left;
+}
+
+#fwslider .slide_content {
+	top:0;
+	left:0;
+	position: absolute;
+	width:100%;
+	height:100%;
+}
+
+#fwslider .slide_content .logo{
+	width:97px;
+	height:106px;
+	margin: 0 auto;
+	display: block;
+}
+
+#fwslider .slide_content_wrap { /* Slider Text Content Container Style */
+	max-width: 1280px;
+	margin: 15% auto;
+}
+
+#fwslider .title {  /* Slider Title Style */
+	opacity: 0;
+	clear: both;
+	color:#fff;     
+	font-size:18px;
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 800;
+	text-transform: uppercase;
+	text-align: center;
+	color: #1d1d1d;
+	margin-top: 20px;
+	letter-spacing: 2px;
+}
+
+#fwslider .description { /* Slider Description Style */
+	opacity: 0;
+	color:#1d1d1d;
+	font-size:14px;
+	padding:10px;
+	clear:both;
+	margin-top:2px;
+	line-height:24px;
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	text-align: center;
+	width: 340px;
+	margin: 0 auto;
+}
+
+#fwslider .readmore { /* Slider Read More button Style */
+	opacity: 0;
+	clear: both;
+	margin: 0 auto;
+	display: block;
+	width: 135px;
+}
+
+.footer {
+	width:100%;
+	float:left;
+	text-align:center;
+}
+
+.footer p {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size:12px;
+	color:#585858;
+	margin-top:20px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	#fwslider .slide_content_wrap { margin-left:50px; margin-top:5%;}
+	#fwslider .description {  font-size:13px;}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    #fwslider .slide_content_wrap { display:none; }
+    #fwslider .timers { display:none; }
+    #fwslider .slide_content {cursor: pointer;}
+}
+
+@media only screen and (max-width: 479px) {
+    #fwslider .slide_content_wrap { display:none; }
+    #fwslider .timers { display:none; }
+    #fwslider .slide_content {cursor: pointer;}
+}
