@@ -5,6 +5,15 @@
 * DATE: 17/11/2013
 */
 
+@font-face {
+  font-family: 'RopaSans-Regular';
+  src: url('../font/RopaSans-Regular.eot?#iefix') format('embedded-opentype'),  url('../font/RopaSans-Regular.woff') format('woff'),
+  url('../font/RopaSans-Regular.ttf')  format('truetype'),
+  url('../font/RopaSans-Regular.svg#RopaSans-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 /* Font
 ================================================== */
@@ -143,12 +152,12 @@ ul.home_quotes li h4{
 	display:inline-block;
 	margin:auto;
 	width:900px;
-	line-height:22px;
-	background: rgb(0, 0, 0); 
-    background: rgba(0, 0, 0, .3);
-	font-family: 'Open Sans', sans-serif;
+	line-height:22px; 
+	background:transparent;		                
+	font-family: inherit;
 	color:#fff;
 	border-radius:3px;
+	margin-bottom: -40px;
 }
 #bigslider .flex-caption h2{
 	font-size:47px;
@@ -207,6 +216,13 @@ ul.home_quotes li h4{
 #about_slider{
 	position:relative;
 	margin:20px 0px;
+}
+
+.team_details h2{
+	color: grey;
+    margin-bottom: 5px;
+    font-size: 22px;
+	font-family: 'RopaSans-Regular';
 }
 
 /*Timeline*/
@@ -327,10 +343,14 @@ opacity: 0.2;
 }
 
 .head_line h4{ 
-	background:#fff;
-	display:inline-block;
-	padding-right:10px;
-	margin-bottom:0px;
+	    background: #fff;
+    display: inline-block;
+    padding-right: 10px;
+    margin-bottom: 0px;
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 17px;
+    font-family: 'RopaSans-Regular';
 }
 
 
@@ -360,14 +380,14 @@ header {
 
 nav {
 	width: 100%;
-	background: rgb(45, 47, 52); 
-    background: rgba(45, 47, 52, .2);
+	background-color:#618081;    
 	text-align: center;
 	position: relative;
 	top:0px;
 	left:0px;
 	z-index: 9999;
-	padding:12px 0px;
+	height:64px;
+	padding:0px 0px;
 	display:inline-block;
 	transition: all 0.2s ease-out 0s;
 }
@@ -402,7 +422,7 @@ nav ul.primary_nav li a{
 	color:#fff;
 	text-decoration:none;
 	text-align:left;
-	padding:34px 19px;
+	    padding: 23px 19px;
 	font-weight:normal;
 	text-transform:uppercase;
 	font-weight:600;
@@ -411,14 +431,14 @@ nav ul.primary_nav li.current{
 	opacity:1;
 }
 nav ul.primary_nav li.current:before{
-	content:'.';
+	
 	font-size:24px;
 	position:absolute;
 	top:39px;
 	margin-left:-5px;
 }
 nav ul.primary_nav li.current:after{
-	content:'.';
+	
 	font-size:24px;
 	position:absolute;
 	top:39px;
@@ -438,7 +458,8 @@ nav a.logo_nav{
 	width:110px;
 	left:5%;
 	top:17px;
-	width:90px;
+	width: 180px!important;
+	
 }
 header{
 	position:fixed;
@@ -447,11 +468,11 @@ header{
 /*If Sticky*/
 header.stuck nav{
 	padding:0px;
-	background: rgb(45, 47, 52); 
-    background: rgba(45, 47, 52, .98);	
+	
+    background: #618081;
 }
 header.stuck nav a.logo_nav{
-	top:5px;
+	
 }
 header.stuck nav .sub_nav{
 	margin-left:180px;
@@ -502,14 +523,11 @@ section.szia_services h4{
 }
 
 .service_block{
-	background: rgba(30, 31, 36, .70);	
-    height: 223px;
+	/* background: rgba(30, 31, 36, .70); */
+    
     left: 0;
-    margin:70px 0px 70px 40px;
-    /*transform: rotate(45deg); 
-	-webkit-transform:rotate(45deg);
-    transition-duration: 0.45s;
-    transition-timing-function: ease-out;*/
+    margin:-17px 0px 17px 40px;
+	height:58px;
     width: 223px;
 	border-radius:3px;
     z-index: 1;
@@ -525,22 +543,18 @@ section.szia_services h4{
 	transform: rotate(-0deg);
 }
 .service_block img{
-	transform: rotate(-45deg);
-	-webkit-transform:rotate(-45deg);
-	width:130px;
+
 	margin:auto;
-	transition-duration: 0.45s;
-    transition-timing-function: ease-out;
+
 }
 .service_block:hover img{
-	transform: rotate(-405deg);
-	-webkit-transform:rotate(-405deg);
+	
 }
 
 .services_col p, .services_col strong{
 	text-align:center;
 	color:#6c717d;
-	font-size:15px;
+	font-size:14px;
 }
 .services_col strong{
 	color:#b2b6c1;
@@ -1228,12 +1242,13 @@ hr.ruler{
     margin: 0;
 }
 .social-icons.about {
-    float: left;
-    margin: 0 0 0 -5px;
+    float: none;
+     margin: 0 auto;
+    display: block;
 }
 .social-icons li {
-    display: inline;
-    float: left;
+     display: inline-block;
+    float: none;
     list-style: none outside none;
     margin-left: 5px;
 	margin-bottom:10px;
@@ -1685,7 +1700,7 @@ ol.comment_list li .commented_by.administrator > strong {
 /*-------------------------------------FOOTER*/
 
 footer{
-	background:#101010;
+	background:#618081;
 	font-size: 16px;
 	color:#666666;
     font-weight: 100;
@@ -1706,6 +1721,7 @@ footer .footer_primary{
 	font-size:20px;
 	line-height:34px;
 	display:inline-block;
+	padding-left: 15px;
 }
 footer .footer_primary .footer_about{
 	float:left;
@@ -2055,6 +2071,14 @@ article ol li {
 }
 
 
+.outside-career-block {
+    width:100%!important; 
+height:auto!important;  
+padding:0px 50px!important; 
+margin-bottom:30px!important;  
+text-align:justify!important; 
+   }
+
 /* #Media Queries
 ================================================== */
 
@@ -2082,6 +2106,13 @@ article ol li {
 	#arrow_more a{
 		background-size:38px 38px;
 	}
+	header nav {background-color: #618081;}
+nav .pull{top:3px;}
+nav a.logo_nav{display:block;}
+.logo_nav > img {
+    margin-left: -100px !important;
+    margin-top: 0 !important;
+}
 
  }
 
@@ -2142,8 +2173,13 @@ article ol li {
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
 	
+	.footer-main-left1{
+	
+	margin-left:0px!important;
+	}
+	
 	.container{
-		width:740px;
+		width:100%;
 	}
 	.container .twelve.columns{
 		width:720px;
@@ -2259,11 +2295,50 @@ article ol li {
 		width:225px;
 	}
 	
+	
+	
+	
+	
+	.career_main_img-content1{
+		
+	    font-size: 82px!important;
+    
+    margin-bottom: 135px!important;
+    margin-top: -426px!important;
+		
+	}
+	
+	.career_main_img-content2{
+	
+	font-size: 23px !important;
+    height: auto !important;
+    line-height: 33px !important;
+    margin-bottom: 5px !important;
+    padding: 0 5px 0 15px !important;
+	}
+	
+	
+	.career_main_img-content3{
+	   font-size: 18px !important;
+    line-height: 24px !important;
+    margin-bottom: 175px !important;
+    padding: 0 16px 0 14px !important;
+	}
+	
+	
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 
 @media only screen and (max-width: 767px) {
+	
+	
+	
+	.footer-main-left1{
+	
+	margin-left:0px!important;
+	}
+	
 	section .container{
 		padding:30px 0px;
 	}
@@ -2286,7 +2361,7 @@ article ol li {
 		line-height:21px;
 	}
 	.container{
-		width:440px;
+		width:100%;
 	}
 	.container .twelve.columns, .container .two-thirds.column, .container .one-third.column, .container .two-thirds.columns,  .services .one-third.column{
 		width:440px;
@@ -2598,13 +2673,49 @@ article ol li {
 		display:none;	
 	}
 	
+	
+	
+	
+	
+	
+	.career_main_img-content1{
+		
+	  font-size: 44px !important;
+    margin-bottom: 85px !important;
+    margin-top: -251px !important; 
+		
+	}
+	
+	.career_main_img-content2{
+	
+	  font-size: 14px !important;
+    height: auto !important;
+    line-height: 19px !important;
+    margin-bottom: 2px !important;
+    padding: 0 5px 0 15px !important;
+	}
+	
+	
+	.career_main_img-content3{
+	  font-size: 10px !important;
+    line-height: 16px !important;
+    margin-bottom: 52px !important;
+    padding: 0 16px 0 14px !important;
+	}
+	
 }
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {
+	
+	
+	.footer-main-left1{
+	
+	margin-left:0px!important;
+	}
 
 	.container{
-		width:300px;
+		width:100%;
 	}
 	.container .twelve.columns, .container .two-thirds.column, .container .one-third.column, .container .two-thirds.columns, .services .one-third.column{
 		width:100%;
@@ -2703,4 +2814,296 @@ article ol li {
 	.paging_blog{ padding:0px; margin:0px;}
 	/*Disabled for Mobile devices*/
 	aside#sidebar{display:none;}
+	
+	
+	.career_main_img-content1{
+		
+	font-size: 37px!important;    
+    margin-bottom: 55px !important;
+    margin-top: -213px !important;
+		
+	}
+	
+	.career_main_img-content2{
+	
+	font-size: 11px!important;  
+    height: auto!important;  
+    line-height: 19px!important;  
+    margin-bottom: 2px!important;  
+    padding: 0 5px 0 15px!important;  
+	}
+	
+	
+	.career_main_img-content3{
+	 font-size: 8px!important;  
+    
+    line-height: 16px!important;  
+    margin-bottom: 19px!important;  
+    padding: 0 16px 0 14px!important;  
+	}
+	
 }
+
+
+ @media only screen and (min-width: 320px) and (max-width: 1024px){
+	
+	.add-security{
+	width:100%!important;
+	height: auto!important;
+    float: left!important;
+	margin-bottom: 23px;
+	}
+	
+	.get-slack{
+	width: 90%!important;
+    height: 50px!important;
+    float: left!important;
+    background-color: #f2b645;
+    margin-right: 31px;
+    margin-top: -10px;
+    text-align: center;
+    padding-top: 17px;
+    font-size: 18px;
+	}
+	
+	.dbot-slack{
+		padding: 22px 0px 174px 20px!important;
+		
+	}
+
+
+	.footer-main-left1{
+	width: 100%!important;	
+	margin-left:0px!important;
+	}
+
+	.footer-main-left2{
+	width: 100%!important;	
+	}
+
+	
+	.service_block{
+		width: auto!important;
+		height: auto!important;
+		padding: 10px 0px 10px 0px;
+	}
+	
+	.one-third services_col{
+		margin-bottom: 45px;
+		
+	}
+
+	.backed-by-main{
+		margin-bottom: 0px!important;
+	}
+		
+	.backed-by-inner2{
+		width:38%!important;
+		margin-left:20px!important;
+	}
+	
+	
+	
+}
+
+
+@media only screen and (max-width: 414px) {
+	
+	.build-best-block {
+    float: left!important;
+        font-size: 19px!important;
+    margin-bottom: -25px!important;
+    line-height: 20px!important;
+	}
+
+	
+	.main-form-text-block{
+font-size: 17px!important;
+font-family: 'RopaSans-Regular'!important;
+color:black!important;
+}
+
+	.outside-career-block { 
+    width:100%!important; 
+height:auto!important;  
+padding:0px 20px!important; 
+margin-bottom:30px!important;  
+text-align:justify!important; 
+   }
+   
+   
+   .career_main_img-content1{
+		
+	font-size: 37px!important;    
+    margin-bottom: 41px!important;
+    margin-top:-338px!important
+		
+	}
+	
+	.career-block{
+		margin-top: 60px!important;
+    padding-left: 20px!important;
+    padding-right: 20px!important;
+	}
+	
+	
+	
+	.dbot-slack {
+    
+    padding-bottom: 190px!important;
+}
+
+
+.team_details {
+    padding: 10px 20px 20px!important;
+    
+}	
+
+   
+}
+
+
+/*  ////////////////////   For IPhone 4s  ////////////////////   */
+@media only screen and (min-width : 320px) and (max-width : 480px) 
+and (orientation : portrait) 
+{ 
+.team_details{max-width:300px !important; margin:0 auto !important;}
+.container .dbot-slack{[padding-bottom:140px !important;}
+
+}
+
+
+/*  ////////////////////   For IPhone 4s  ////////////////////   */
+@media only screen and (min-width : 320px) and (max-width : 480px) 
+and (orientation : landscape) 
+{ 
+ .container .dbot-slack{padding: 22px 0px 155px 20px !important;}
+.btn-link .get-slack{width:97% !important;}
+.column.twelve .two.columns{width:44%;}
+.team_details{max-width:300px; margin:0 auto;}
+
+.caption_container .build-best-block {font-size: 20px;line-height: 25px;}
+#bigslider .caption_container{bottom:0px;}
+.main-form-text-block{font-size:18px !important;}
+.newsletter-submit, .newsletter-email, .newsletter-firstname{margin-bottom:10px !important;}
+.newsletter-firstname{margin-top:10px !important;}
+.nwsltr-outer-area {margin-bottom: 0;margin-top: 0 !important;padding-top: 10px !important;}
+.slides img {height: auto !important;}
+table{margin:0 auto;}
+input[type="text"], input[type="password"], input[type="email"], textarea{padding:6px !important;}
+
+
+}
+
+
+/*  ////////////////////   For IPhone 5,5s  ////////////////////   */
+@media only screen and (min-width : 320px) and (max-width : 568px) 
+and (orientation : landscape) 
+{ 
+.container .dbot-slack{padding: 22px 0px 155px 20px !important;}
+.btn-link .get-slack{width:97% !important;}
+.column.twelve .two.columns{width:44%;}
+.team_details{max-width:300px; margin:0 auto;}
+
+.caption_container .build-best-block {font-size: 20px;line-height: 25px;}
+#bigslider .caption_container{bottom:0px;}
+.main-form-text-block{font-size:18px !important;}
+.newsletter-submit, .newsletter-email, .newsletter-firstname{margin-bottom:10px !important;}
+.newsletter-firstname{margin-top:10px !important;}
+.nwsltr-outer-area {margin-bottom: 0;margin-top: 0 !important;padding-top: 10px !important;}
+.slides img {height: auto !important;}
+table{margin:0 auto;}
+input[type="text"], input[type="password"], input[type="email"], textarea{padding:6px !important;}
+
+}
+
+
+/*   ////////////////////  For IPhone 5,5s   ////////////////////  */
+@media only screen and (min-width : 320px) and (max-width : 568px) 
+and (orientation : portrait) 
+{ 
+
+
+
+}
+
+
+
+/*  ////////////////////   For iPhone 6  ////////////////////    */
+@media only screen and (min-width : 375px) and (max-width : 667px) 
+and (orientation : landscape) 
+{ 
+.container .dbot-slack{padding: 22px 0px 155px 20px !important;}
+.btn-link .get-slack{width:97% !important;}
+.column.twelve .two.columns{width:45%;}
+.team_details{max-width:300px; margin:0 auto;}
+.caption_container .build-best-block {font-size: 20px;line-height: 25px;}
+#bigslider .caption_container{bottom:0px;}
+.main-form-text-block{font-size:18px !important;}
+.newsletter-submit, .newsletter-email, .newsletter-firstname{margin-bottom:10px !important;}
+.newsletter-firstname{margin-top:10px !important;}
+.nwsltr-outer-area {margin-bottom: 0;margin-top: 0 !important;padding-top: 10px !important;}
+.slides img {height: auto !important;}
+table{margin:0 auto;}
+input[type="text"], input[type="password"], input[type="email"], textarea{padding:6px !important;}
+}
+
+/*  ////////////////////   For iPhone 6  ////////////////////   */
+@media only screen and (min-width : 375px) and (max-width : 667px) 
+and (orientation : portrait) 
+{ 
+	.build-best-block {
+    
+    margin-bottom: 18px!important;
+	}
+   #home #bigslider li .caption_container{bottom:10%;}
+.team_details{max-width:300px !important; margin:0 auto !important;}
+.container .dbot-slack{[padding-bottom:140px !important;}
+
+}
+
+
+
+/* ////////////////////   For iPhone 6 Plus /////////////////////////////// */
+@media only screen and (min-width : 414px) and (max-width : 736px) 
+and (orientation : landscape) 
+{ 
+#home{padding-top:40px;}
+.container .dbot-slack{padding: 22px 0px 125px 20px !important;}
+.btn-link .get-slack{width:100% !important;}
+.column.twelve .two.columns{width:45%;}
+.team_details{max-width:300px; margin:0 auto;}
+.caption_container .build-best-block {font-size: 23px;line-height: 28px;}
+#bigslider .caption_container{bottom:0px;}
+.main-form-text-block{font-size:18px !important;}
+.newsletter-submit, .newsletter-email, .newsletter-firstname{margin-bottom:10px !important;}
+.newsletter-firstname{margin-top:10px !important;}
+.nwsltr-outer-area {margin-bottom: 0;margin-top: 0 !important;padding-top: 10px !important;}
+.slides img {height: auto !important;}
+table{margin:0 auto;}
+input[type="text"], input[type="password"], input[type="email"], textarea{padding:6px !important;}
+}
+
+/* ////////////////////   For iPhone 6 Plus  ////////////////////   */
+@media only screen and (min-width : 414px) and (max-width : 736px) 
+and (orientation : portrait) 
+{ 
+
+
+
+}
+
+/* ////////////////////   For iPad  ////////////////////   */
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+.team_details{max-width:300px !important; margin:0 auto !important;}
+
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
+.column.twelve .two.columns{width:47% !important;}
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: lanscape){
+.container .two.columns{max-width:180px !important;}.get-slack{width:97% !important;}
+}
+
+
+
