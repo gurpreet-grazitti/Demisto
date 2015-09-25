@@ -2107,9 +2107,9 @@ text-align:justify!important;
 		background-size:38px 38px;
 	}
 	header nav {background-color: #618081;}
-nav .pull{top:3px;}
-nav a.logo_nav{display:block;}
-.logo_nav > img {
+	nav .pull{top:3px;}
+	nav a.logo_nav{display:block;}
+	.logo_nav > img {
     margin-left: -100px !important;
     margin-top: 0 !important;
 }
@@ -2609,9 +2609,9 @@ nav a.logo_nav{display:block;}
 		padding:0px;
 		top:-15px;
 	}
-	nav a.logo_nav{
+	/* nav a.logo_nav{
 		display:none;
-	}
+	} */
 	nav ul {
 		display: none;
 		height: auto;
